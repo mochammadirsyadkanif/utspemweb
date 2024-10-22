@@ -19,6 +19,41 @@
         </div>
     </header>
 
+    <div class="search-container">
+        <h1>Cari Artikel</h1>
+
+        <input type="text" id="searchBar">
+
+        <ul id="articleList">
+            <li data-url="artikel1.html">Mengenal Ikan Guppy</li>
+            <li data-url="artikel2.html">Mengenal TikTok affiliate: ini syarat dan ketentuannya</li>
+            <li data-url="artikel3.html">10 Coding Dasar HTML yang Blogger Wajib Tahu</li>
+            <li data-url="artikel4.html">Tips dan Cara Memulai Bisnis Sendiri</li>
+        </ul>
+    </div>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const articleList = document.getElementById('articleList');
+        const articles = document.querySelectorAll('#articleList li');
+
+        searchBar.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+
+            if (searchTerm.length > 0) {
+                articleList.style.display = '';
+            } 
+            else {
+                articleList.style.display = 'none';
+            }
+
+            articles.forEach(article => {
+                const text = article.textContent.toLowerCase();
+                article.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+    </script>
+
     <main class="container">
         <section class="articles">
             <article>
