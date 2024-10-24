@@ -1,128 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Menghapus margin */
+    padding: 0; /* Menghapus padding */
+    box-sizing: border-box; /* Mengatur box-sizing */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Font yang digunakan */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 80%; /* Lebar kontainer */
+    max-width: 1200px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Mengatur margin auto untuk pusatkan kontainer */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
+    background-color: #333; /* Warna latar belakang header */
+    color: #fff; /* Warna teks header */
+    padding: 15px 0; /* Padding untuk header */
+    text-align: center; /* Pusatkan teks dalam header */
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Jarak bawah judul header */
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+    list-style: none; /* Menghapus bullet list */
+    text-align: center; /* Pusatkan teks dalam nav */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline; /* Tampilkan item dalam satu baris */
+    margin: 0 10px; /* Jarak antar item */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Warna tautan */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
 }
 
 main {
-    margin-top: 20px;
+    margin-top: 20px; /* Jarak atas untuk konten utama */
 }
 
 .articles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: grid; /* Mengatur artikel dalam grid */
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom dalam grid */
+    gap: 20px; /* Jarak antar artikel */
 }
 
 .articles article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Warna latar belakang artikel */
+    padding: 20px; /* Padding untuk artikel */
+    border-radius: 5px; /* Sudut melengkung untuk artikel */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk artikel */
 }
 
 .articles img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    width: 100%; /* Lebar gambar 100% dari kontainer */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
+    border-radius: 5px; /* Sudut melengkung untuk gambar */
+    margin-bottom: 10px; /* Jarak bawah gambar */
 }
 
 .article2 img {
-    width:50%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    width: 50%; /* Lebar gambar di artikel 2 */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
+    border-radius: 5px; /* Sudut melengkung untuk gambar */
+    margin-bottom: 10px; /* Jarak bawah gambar */
 }
 
 .article3 img {
-    width:30%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    width: 30%; /* Lebar gambar di artikel 3 */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
+    border-radius: 5px; /* Sudut melengkung untuk gambar */
+    margin-bottom: 10px; /* Jarak bawah gambar */
 }
 
 .about-us {
-    margin-top: 30px;
-    text-align: center;
+    margin-top: 30px; /* Jarak atas untuk bagian tentang kami */
+    text-align: center; /* Pusatkan teks dalam bagian tentang kami */
 }
 
 .about-us h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Jarak bawah untuk judul tentang kami */
 }
 
 .about-us .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 70px;
+    display: inline-block; /* Tampilkan tombol dalam baris */
+    padding: 10px 20px; /* Padding untuk tombol */
+    background-color: #333; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    text-decoration: none; /* Menghapus garis bawah pada tombol */
+    border-radius: 70px; /* Sudut melengkung untuk tombol */
 }
 
 .contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    display: inline-block; /* Tampilkan tombol kontak dalam baris */
+    padding: 10px 20px; /* Padding untuk tombol kontak */
+    background-color: #333; /* Warna latar belakang tombol kontak */
+    color: #fff; /* Warna teks tombol kontak */
+    text-decoration: none; /* Menghapus garis bawah pada tombol kontak */
+    border-radius: 5px; /* Sudut melengkung untuk tombol kontak */
+    margin-top: 10px; /* Jarak atas untuk tombol kontak */
 }
 
 .team-member {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    text-align: center;
-    transition: transform 0.3s;
+    background-color: #fff; /* Warna latar belakang anggota tim */
+    padding: 20px; /* Padding untuk anggota tim */
+    border-radius: 10px; /* Sudut melengkung untuk anggota tim */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk anggota tim */
+    margin-bottom: 40px; /* Jarak bawah untuk anggota tim */
+    text-align: center; /* Pusatkan teks dalam anggota tim */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    transition: transform 0.3s;
+    width: 150px; /* Lebar gambar anggota tim */
+    height: 150px; /* Tinggi gambar anggota tim */
+    border-radius: 50%; /* Membuat gambar bulat */
+    margin-bottom: 10px; /* Jarak bawah gambar anggota tim */
+    transition: transform 0.3s; /* Transisi untuk efek hover pada gambar */
 }
 
 .team-member:hover {
@@ -131,46 +133,50 @@ main {
 
 @media (max-width: 768px) {
     .about-us {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Mengatur arah kolom pada ukuran layar kecil */
+        align-items: center; /* Pusatkan item di dalam tentang kami */
     }
 
     .team-member {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Lebar 100% untuk anggota tim pada ukuran layar kecil */
+        margin-bottom: 20px; /* Jarak bawah untuk anggota tim */
+    }
+
+    .articles {
+        grid-template-columns: 1fr; /* Satu kolom pada ukuran layar kecil */
     }
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center; /* Pusatkan teks dalam footer */
+    padding: 10px 0; /* Padding untuk footer */
+    margin-top: 20px; /* Jarak atas untuk footer */
 }
 
 .search-form {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+    display: flex; /* Mengatur tampilan flex untuk formulir pencarian */
+    margin-left: auto; /* Margin kiri auto untuk menggeser ke kanan */
+    align-items: center; /* Pusatkan item dalam formulir pencarian */
 }
 
 #searchInput {
-    padding: 5px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 5px; /* Padding untuk input pencarian */
+    margin-right: 10px; /* Jarak kanan untuk input pencarian */
+    border: 1px solid #ccc; /* Border untuk input pencarian */
+    border-radius: 5px; /* Sudut melengkung untuk input pencarian */
 }
 
 .search-form button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 5px 10px; /* Padding untuk tombol pencarian */
+    background-color: #007bff; /* Warna latar belakang tombol pencarian */
+    color: white; /* Warna teks tombol pencarian */
+    border: none; /* Menghapus border untuk tombol pencarian */
+    border-radius: 5px; /* Sudut melengkung untuk tombol pencarian */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
 }
 
 .search-form button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Warna latar belakang saat hover pada tombol pencarian */
 }
