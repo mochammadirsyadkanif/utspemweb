@@ -1,20 +1,25 @@
 * {
-    margin: 0; /* Menghapus margin */
-    padding: 0; /* Menghapus padding */
-    box-sizing: border-box; /* Mengatur box-sizing */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    width: 100%; /* Pastikan lebar body 100% */
 }
 
 body {
     font-family: Arial, sans-serif; /* Font yang digunakan */
     background-color: #f4f4f4; /* Warna latar belakang */
     color: #333; /* Warna teks */
-    overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 
 .container {
-    width: 80%; /* Lebar kontainer */
-    max-width: 1200px; /* Lebar maksimum kontainer */
-    margin: 0 auto; /* Mengatur margin auto untuk pusatkan kontainer */
+    width: 100%; /* Pastikan lebar kontainer 100% */
+    max-width: 1200px; /* Tetap ada batas maksimum */
+    margin: 0 auto; /* Center kontainer */
+    padding: 0 20px; /* Tambahkan padding jika perlu */
 }
 
 header {
@@ -61,21 +66,7 @@ main {
 }
 
 .articles img {
-    width: 100%; /* Lebar gambar 100% dari kontainer */
-    height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
-    border-radius: 5px; /* Sudut melengkung untuk gambar */
-    margin-bottom: 10px; /* Jarak bawah gambar */
-}
-
-.article2 img {
-    width: 50%; /* Lebar gambar di artikel 2 */
-    height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
-    border-radius: 5px; /* Sudut melengkung untuk gambar */
-    margin-bottom: 10px; /* Jarak bawah gambar */
-}
-
-.article3 img {
-    width: 30%; /* Lebar gambar di artikel 3 */
+    max-width: 100%; /* Pastikan gambar tidak melebihi lebar kontainer */
     height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
     border-radius: 5px; /* Sudut melengkung untuk gambar */
     margin-bottom: 10px; /* Jarak bawah gambar */
@@ -97,16 +88,6 @@ main {
     color: #fff; /* Warna teks tombol */
     text-decoration: none; /* Menghapus garis bawah pada tombol */
     border-radius: 70px; /* Sudut melengkung untuk tombol */
-}
-
-.contact-button {
-    display: inline-block; /* Tampilkan tombol kontak dalam baris */
-    padding: 10px 20px; /* Padding untuk tombol kontak */
-    background-color: #333; /* Warna latar belakang tombol kontak */
-    color: #fff; /* Warna teks tombol kontak */
-    text-decoration: none; /* Menghapus garis bawah pada tombol kontak */
-    border-radius: 5px; /* Sudut melengkung untuk tombol kontak */
-    margin-top: 10px; /* Jarak atas untuk tombol kontak */
 }
 
 .team-member {
@@ -132,18 +113,8 @@ main {
 }
 
 @media (max-width: 768px) {
-    .about-us {
-        flex-direction: column; /* Mengatur arah kolom pada ukuran layar kecil */
-        align-items: center; /* Pusatkan item di dalam tentang kami */
-    }
-
-    .team-member {
-        width: 100%; /* Lebar 100% untuk anggota tim pada ukuran layar kecil */
-        margin-bottom: 20px; /* Jarak bawah untuk anggota tim */
-    }
-
     .articles {
-        grid-template-columns: 1fr; /* Satu kolom pada ukuran layar kecil */
+        grid-template-columns: 1fr; /* Satu kolom untuk tampilan kecil */
     }
 }
 
