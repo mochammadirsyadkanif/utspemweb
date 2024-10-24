@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temukan Artikel Yang Menarik</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tambahkan CSS untuk hover effects */
+        article img {
+            transition: transform 0.3s;
+        }
+        article img:hover {
+            transform: scale(1.05); /* Membesar sedikit saat hover */
+        }
+
+        /* Tambahan styling untuk tombol */
+        .read-more {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling untuk sosial media */
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +58,6 @@
             </form>
         </div>
     </header>
-    
 
     <main class="container">
         <section class="articles">
@@ -31,9 +66,7 @@
                     <img src="gartikel1.jpg" alt="Gambar Artikel 1">
                     <h2>Mengenal Ikan Guppy</h2>
                 </a>
-                <p style="text-align: justify; margin-bottom: 20px;">Ikan guppy, atau yang juga dikenal sebagai Poecilia reticulata, adalah salah satu ikan air tawar paling populer di dunia aquascape dan akuarium hias.
-
-                    Dikenal dengan warna-warni yang mencolok dan pola ekor yang unik, klik untuk membaca lebih lanjut !!!</p>
+                <p style="text-align: justify; margin-bottom: 20px;">Ikan guppy, atau yang juga dikenal sebagai Poecilia reticulata, adalah salah satu ikan air tawar paling populer di dunia aquascape dan akuarium hias. Dikenal dengan warna-warni yang mencolok dan pola ekor yang unik, <a class="read-more" href="artikel1.html">Baca Selengkapnya</a></p>
             </article>
 
             <article>
@@ -41,7 +74,7 @@
                     <img src="gartikel2.jpg" alt="Gambar Artikel 2">
                     <h2>Mengenal TikTok affiliate: ini syarat dan ketentuannya</h2>
                 </a>
-                <p style="text-align: justify; margin-bottom: 20px;">TikTok affiliate program resmi diluncurkan pada tahun 2021. Program ini memberikan kesempatan bagi pengguna TikTok untuk memonetisasi konten mereka dengan mempromosikan, klik untuk membaca lebih lanjut !!!</p>
+                <p style="text-align: justify; margin-bottom: 20px;">TikTok affiliate program resmi diluncurkan pada tahun 2021. Program ini memberikan kesempatan bagi pengguna TikTok untuk memonetisasi konten mereka dengan mempromosikan, <a class="read-more" href="artikel2.html">Baca Selengkapnya</a></p>
             </article>
 
             <article>
@@ -49,9 +82,7 @@
                     <img src="gartikel3.jpg" alt="Gambar Artikel 3">
                     <h2>10 Coding Dasar HTML yang Blogger Wajib Tahu</h2>
                 </a>
-                <p style="text-align: justify; margin-bottom: 20px;">Untuk menjadi seorang blogger yang baik, kemampuan blogging saja tidak cukup. Anda perlu mengoptimasi SEO supaya performa blog lebih maksimal. Salah satu caranya yaitu dengan memahami coding HTML dasar untuk blogger.
-
-                    Dengan mengetahui tag HTML untuk blog, klik untuk membaca lebih lanjut !!!  </p>
+                <p style="text-align: justify; margin-bottom: 20px;">Untuk menjadi seorang blogger yang baik, kemampuan blogging saja tidak cukup. Anda perlu mengoptimasi SEO supaya performa blog lebih maksimal. Salah satu caranya yaitu dengan memahami coding HTML dasar untuk blogger. <a class="read-more" href="artikel3.html">Baca Selengkapnya</a></p>
             </article>
 
             <article>
@@ -59,17 +90,21 @@
                     <img src="gartikel4.jpg" alt="Gambar Artikel 4">
                     <h2>Tips dan Cara Memulai Bisnis Sendiri</h2>
                 </a>
-                <p style="text-align: justify; margin-bottom: 20px;">Cara memulai bisnis mungkin terlihat sulit bagi seseorang yang baru pertama kali ingin terjun ke dunia usaha. Dalam berbisnis sendiri, diperlukan wawasan atau pengetahuan untuk melakukannya, tak hanya sekadar mempersiapkan modal.
-
-                    Ada hal-hal lain yang perlu dipersiapkan oleh seseorang yang sedang ingin memulai usaha sendiri. klik untuk membaca lebih lanjut !!!</p>
+                <p style="text-align: justify; margin-bottom: 20px;">Cara memulai bisnis mungkin terlihat sulit bagi seseorang yang baru pertama kali ingin terjun ke dunia usaha. Dalam berbisnis sendiri, diperlukan wawasan atau pengetahuan untuk melakukannya, <a class="read-more" href="artikel4.html">Baca Selengkapnya</a></p>
             </article>
-
         </section>
 
         <section class="about-us">
             <h2>Tentang Kami</h2>
             <p>Kami adalah tim yang berdedikasi untuk memberikan konten berkualitas dan menarik bagi para pembaca.</p>
             <a href="page2.html" class="button">Lihat Biodata Kami</a>
+        </section>
+
+        <section class="social-media">
+            <h2>Ikuti Kami di Sosial Media</h2>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
         </section>
     </main>
 
@@ -78,13 +113,14 @@
             <p>&copy; 2024 Pemweb Kel 11</p>
         </div>
     </footer>
+
     <script>
         document.getElementById('searchForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const query = document.getElementById('searchInput').value.toLowerCase();
             const articles = document.querySelectorAll('.articles article');
             let found = false;
-    
+
             articles.forEach(article => {
                 const title = article.querySelector('h2').innerText.toLowerCase();
                 if (title.includes(query)) {
@@ -94,11 +130,11 @@
                     article.style.display = 'none'; // Menyembunyikan artikel yang tidak sesuai
                 }
             });
-    
+
             if (!found) {
                 alert("Artikel tidak ditemukan.");
             }
         });
-    </script>   
+    </script>
 </body>
 </html>
