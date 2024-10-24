@@ -3,56 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemweb Kel 2</title>
+    <title>Temukan Artikel Yang Menarik</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Pemweb Kel 2</h1>
+            <h1>Pemweb Kel 11</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="page2.html">Tentang Kami</a></li>
                 </ul>
             </nav>
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchInput" placeholder="Cari artikel...">
+                <button type="submit">Cari</button>
+            </form>
         </div>
     </header>
-
-    <div class="search-container">
-        <h1>Cari Artikel</h1>
-
-        <input type="text" id="searchBar">
-
-        <ul id="articleList">
-            <li data-url="artikel1.html">Mengenal Ikan Guppy</li>
-            <li data-url="artikel2.html">Mengenal TikTok affiliate: ini syarat dan ketentuannya</li>
-            <li data-url="artikel3.html">10 Coding Dasar HTML yang Blogger Wajib Tahu</li>
-            <li data-url="artikel4.html">Tips dan Cara Memulai Bisnis Sendiri</li>
-        </ul>
-    </div>
-
-    <script>
-        const searchBar = document.getElementById('searchBar');
-        const articleList = document.getElementById('articleList');
-        const articles = document.querySelectorAll('#articleList li');
-
-        searchBar.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-
-            if (searchTerm.length > 0) {
-                articleList.style.display = '';
-            } 
-            else {
-                articleList.style.display = 'none';
-            }
-
-            articles.forEach(article => {
-                const text = article.textContent.toLowerCase();
-                article.style.display = text.includes(searchTerm) ? '' : 'none';
-            });
-        });
-    </script>
+    
 
     <main class="container">
         <section class="articles">
@@ -105,8 +75,30 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Pemweb Kel 2</p>
+            <p>&copy; 2024 Pemweb Kel 11</p>
         </div>
     </footer>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const articles = document.querySelectorAll('.articles article');
+            let found = false;
+    
+            articles.forEach(article => {
+                const title = article.querySelector('h2').innerText.toLowerCase();
+                if (title.includes(query)) {
+                    article.style.display = 'block'; // Menampilkan artikel yang sesuai
+                    found = true;
+                } else {
+                    article.style.display = 'none'; // Menyembunyikan artikel yang tidak sesuai
+                }
+            });
+    
+            if (!found) {
+                alert("Artikel tidak ditemukan.");
+            }
+        });
+    </script>   
 </body>
 </html>
