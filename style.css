@@ -4,108 +4,125 @@
     box-sizing: border-box;
 }
 
-html, body {
-    overflow-x: hidden; /* Mencegah scroll horizontal */
-    width: 100%; /* Pastikan lebar body 100% */
-}
-
 body {
-    font-family: Arial, sans-serif; /* Font yang digunakan */
-    background-color: #f4f4f4; /* Warna latar belakang */
-    color: #333; /* Warna teks */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
-    width: 100%; /* Pastikan lebar kontainer 100% */
-    max-width: 1200px; /* Tetap ada batas maksimum */
-    margin: 0 auto; /* Center kontainer */
-    padding: 0 20px; /* Tambahkan padding jika perlu */
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #333; /* Warna latar belakang header */
-    color: #fff; /* Warna teks header */
-    padding: 15px 0; /* Padding untuk header */
-    text-align: center; /* Pusatkan teks dalam header */
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
 }
 
 header h1 {
-    margin-bottom: 10px; /* Jarak bawah judul header */
+    margin-bottom: 10px;
 }
 
 nav ul {
-    list-style: none; /* Menghapus bullet list */
-    text-align: center; /* Pusatkan teks dalam nav */
+    list-style: none;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline; /* Tampilkan item dalam satu baris */
-    margin: 0 10px; /* Jarak antar item */
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff; /* Warna tautan */
-    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
-    margin-top: 20px; /* Jarak atas untuk konten utama */
+    margin-top: 20px;
 }
 
 .articles {
-    display: grid; /* Mengatur artikel dalam grid */
-    grid-template-columns: repeat(2, 1fr); /* Dua kolom dalam grid */
-    gap: 20px; /* Jarak antar artikel */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .articles article {
-    background-color: #fff; /* Warna latar belakang artikel */
-    padding: 20px; /* Padding untuk artikel */
-    border-radius: 5px; /* Sudut melengkung untuk artikel */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk artikel */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .articles img {
-    max-width: 100%; /* Pastikan gambar tidak melebihi lebar kontainer */
-    height: auto; /* Tinggi otomatis untuk menjaga rasio gambar */
-    border-radius: 5px; /* Sudut melengkung untuk gambar */
-    margin-bottom: 10px; /* Jarak bawah gambar */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article2 img {
+    width:50%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article3 img {
+    width:30%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .about-us {
-    margin-top: 30px; /* Jarak atas untuk bagian tentang kami */
-    text-align: center; /* Pusatkan teks dalam bagian tentang kami */
+    margin-top: 30px;
+    text-align: center;
 }
 
 .about-us h2 {
-    margin-bottom: 20px; /* Jarak bawah untuk judul tentang kami */
+    margin-bottom: 20px;
 }
 
 .about-us .button {
-    display: inline-block; /* Tampilkan tombol dalam baris */
-    padding: 10px 20px; /* Padding untuk tombol */
-    background-color: #333; /* Warna latar belakang tombol */
-    color: #fff; /* Warna teks tombol */
-    text-decoration: none; /* Menghapus garis bawah pada tombol */
-    border-radius: 70px; /* Sudut melengkung untuk tombol */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 70px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .team-member {
-    background-color: #fff; /* Warna latar belakang anggota tim */
-    padding: 20px; /* Padding untuk anggota tim */
-    border-radius: 10px; /* Sudut melengkung untuk anggota tim */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk anggota tim */
-    margin-bottom: 40px; /* Jarak bawah untuk anggota tim */
-    text-align: center; /* Pusatkan teks dalam anggota tim */
-    transition: transform 0.3s; /* Transisi untuk efek hover */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
 .team-member img {
-    width: 150px; /* Lebar gambar anggota tim */
-    height: 150px; /* Tinggi gambar anggota tim */
-    border-radius: 50%; /* Membuat gambar bulat */
-    margin-bottom: 10px; /* Jarak bawah gambar anggota tim */
-    transition: transform 0.3s; /* Transisi untuk efek hover pada gambar */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
 }
 
 .team-member:hover {
@@ -113,41 +130,47 @@ main {
 }
 
 @media (max-width: 768px) {
-    .articles {
-        grid-template-columns: 1fr; /* Satu kolom untuk tampilan kecil */
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
 footer {
-    background-color: #333; /* Warna latar belakang footer */
-    color: #fff; /* Warna teks footer */
-    text-align: center; /* Pusatkan teks dalam footer */
-    padding: 10px 0; /* Padding untuk footer */
-    margin-top: 20px; /* Jarak atas untuk footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 .search-form {
-    display: flex; /* Mengatur tampilan flex untuk formulir pencarian */
-    margin-left: auto; /* Margin kiri auto untuk menggeser ke kanan */
-    align-items: center; /* Pusatkan item dalam formulir pencarian */
+    display: flex;
+    margin-left: auto;
+    align-items: center;
 }
 
 #searchInput {
-    padding: 5px; /* Padding untuk input pencarian */
-    margin-right: 10px; /* Jarak kanan untuk input pencarian */
-    border: 1px solid #ccc; /* Border untuk input pencarian */
-    border-radius: 5px; /* Sudut melengkung untuk input pencarian */
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .search-form button {
-    padding: 5px 10px; /* Padding untuk tombol pencarian */
-    background-color: #007bff; /* Warna latar belakang tombol pencarian */
-    color: white; /* Warna teks tombol pencarian */
-    border: none; /* Menghapus border untuk tombol pencarian */
-    border-radius: 5px; /* Sudut melengkung untuk tombol pencarian */
-    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .search-form button:hover {
-    background-color: #0056b3; /* Warna latar belakang saat hover pada tombol pencarian */
+    background-color: #0056b3;
 }
