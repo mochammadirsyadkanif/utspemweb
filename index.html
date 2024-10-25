@@ -52,10 +52,7 @@
                     <li><a href="page2.html">Tentang Kami</a></li>
                 </ul>
       </nav>
-            <form id="searchForm" class="search-form">
-                <input type="text" id="searchInput" placeholder="Cari artikel...">
-                <button type="submit">Cari</button>
-            </form>
+            
         </div>
     </header>
 
@@ -114,28 +111,7 @@
         </div>
     </footer>
     
-<script>
-        document.getElementById('searchForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const articles = document.querySelectorAll('.articles article');
-            let found = false;
 
-            articles.forEach(article => {
-                const title = article.querySelector('h2').innerText.toLowerCase();
-                if (title.includes(query)) {
-                    article.style.display = 'block'; // Menampilkan artikel yang sesuai
-                    found = true;
-                } else {
-                    article.style.display = 'none'; // Menyembunyikan artikel yang tidak sesuai
-                }
-            });
-
-            if (!found) {
-                alert("Artikel tidak ditemukan.");
-            }
-        });
-    </script>
     
 </body>
 </html>
