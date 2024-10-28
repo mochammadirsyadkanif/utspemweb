@@ -6,7 +6,7 @@ Berikut domain web kami:
 - *https://mochammadirsyadkanif.github.io/utspemweb/*
 ### 1. Struktur HTML
 
-    1. indeks.html (Halaman Utama) terdapat:
+    1. index.html (Halaman Utama) terdapat:
           Navbar untuk navigasi antar halaman
           Header dengan tulisan Pemweb Kel 11
           Kolom pencarian untuk web artikel
