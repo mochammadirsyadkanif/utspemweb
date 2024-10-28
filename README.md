@@ -1,4 +1,4 @@
-# WEPSITE KELOMPOK 11
+# WEBSITE KELOMPOK 11
 Di sini kami kelompok 11 telah membuat web yang memuat beberapa artikel.
 
 ## Melihat Halaman Web
