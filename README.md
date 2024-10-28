@@ -1,7 +1,10 @@
 # WEPSITE KELOMPOK 11
 Di sini kami kelompok 11 telah membuat web yang memuat beberapa artikel.
 
-## Struktur HTML
+## Melihat Halaman Web
+Berikut domain web kami:
+- *https://mochammadirsyadkanif.github.io/utspemweb/*
+### 1. Struktur HTML
 
     1. indeks.html (Halaman Utama) terdapat:
           Navbar untuk navigasi antar halaman
@@ -29,7 +32,7 @@ Di sini kami kelompok 11 telah membuat web yang memuat beberapa artikel.
             Kolom kontak
             Popup pada kolom biodata ketika kursor diarahkan
 
-## Desain CSS
+### 2. Desain CSS
 
     1. Tema Warna
           Warna Utama: #f4f4f4 (Putih)
@@ -49,7 +52,7 @@ Di sini kami kelompok 11 telah membuat web yang memuat beberapa artikel.
           Centered content alignment
           Responsive design elements
 
-## Kreativitas dan Desain
+### 3 Kreativitas dan Desain
     1. User Interface
           Automatic image slideshow
           Hover effects pada cards
@@ -61,6 +64,20 @@ Di sini kami kelompok 11 telah membuat web yang memuat beberapa artikel.
           Clean and organized layout
           Easy-to-read typography
           Smooth transitions and animations
+### 4. Dokumentasi dan SRS
+Dokumentasi proyek ini mencakup beberapa point penting:
 
-Fungsionalitas JavaScript
-Fungsionalitas JavaScript terdapat pada Kolom Pencarian
+- **Penjelasan Kode**: Setiap file memiliki komentar yang menjelaskan fungsi utama dari tiap bagian kode.
+- **Strukter Folder**:
+    - `index.html` - file halaman utama pada web
+    - `style.css` - file css untuk mengatur tampilan
+    - **javascript** - fungsi interaktif
+    - **assets** - file berisikan image yang di butuhkan pada web
+- **SRS (Software Requirements Specification)**:
+    - **Tujuan**: Menciptakan halaman web artikel yang menarik untuk pembaca
+    - **Fungsi Utama**: Menampilkan sebuah artikel bermacam macam topik yang menarik
+    - **Speksifikasi Pengguna**: Simpel, mudah digunakan, responsif, interaktif.
+    - **Batasan**: Fitur hanya mendukung tampilan dekstop/pc
+
+### 5. Fungsionalitas JavaScript
+- **Fitur Pencarian**: Memberikan kemudahan untuk mencari artikel
