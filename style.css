@@ -29,8 +29,14 @@ header {
     align-items: center;
 }
 
+h1 {
+    text-align: left; /* Mengatur teks agar rata kiri */
+    margin: 0; /* Menghapus margin jika ada */
+    padding: 0; /* Menghapus padding jika ada */
+}
+
 header h1 {
-    margin-left: 10px;
+    margin-bottom: 10px;
     font-size: 24px; /* Sesuaikan ukuran font agar tidak terlalu besar */
 }
 
