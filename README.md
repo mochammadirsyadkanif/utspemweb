@@ -68,7 +68,7 @@ Berikut domain web kami:
 Dokumentasi proyek ini mencakup beberapa point penting:
 
 - **Penjelasan Kode**: Setiap file memiliki komentar yang menjelaskan fungsi utama dari tiap bagian kode.
-- **Strukter Folder**:
+- **Struktur Folder**:
     - `index.html` - file halaman utama pada web
     - `style.css` - file css untuk mengatur tampilan
     - **javascript** - fungsi interaktif
