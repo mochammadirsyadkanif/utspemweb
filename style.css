@@ -1,20 +1,24 @@
+/* Mengatur margin dan padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Gaya umum untuk body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Mengatur lebar container utama */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Gaya untuk header */
 header {
     background-color: #333;
     color: #fff;
@@ -26,6 +30,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Gaya untuk navigasi */
 nav ul {
     list-style: none;
     text-align: center;
@@ -41,10 +46,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Gaya utama untuk konten */
 main {
     margin-top: 20px;
 }
 
+/* Gaya untuk daftar artikel */
 .articles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -82,10 +89,10 @@ main {
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    margin-bottom: 10px; /* Adds space below the link */
-    margin-left: 5px; /* Adds space to the left of the link */
-    margin-right: 5px; /* Adds space to the right of the link */
-    padding: 5px 10px; /* Adds space inside the link for a button-like feel */
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
 }
 
 .about-us {
@@ -116,6 +123,7 @@ main {
     margin-top: 10px;
 }
 
+/* Gaya untuk bagian team member */
 .team-member {
     background-color: #fff;
     padding: 20px;
@@ -138,7 +146,12 @@ main {
     transform: scale(1.05); 
 }
 
+/* Media query untuk perangkat kecil */
 @media (max-width: 768px) {
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
     .about-us {
         flex-direction: column;
         align-items: center;
@@ -150,6 +163,7 @@ main {
     }
 }
 
+/* Gaya untuk footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -158,6 +172,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Gaya untuk form pencarian */
 .search-form {
     display: flex;
     margin-left: auto;
