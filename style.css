@@ -1,44 +1,31 @@
-/* Mengatur margin dan padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Gaya umum untuk body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Mengatur lebar container utama */
 .container {
-    display: flex;
-}
-
-.containerr {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Gaya untuk header */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 15px; /* Anda bisa mengurangi padding ini jika perlu */
-    text-align: left; /* Mengatur teks agar rata kiri */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Menyusun item ke kiri */
+    padding: 10px 0;
+    text-align: center;
 }
 
 header h1 {
     margin-bottom: 10px;
-    font-size: 24px; /* Sesuaikan ukuran font agar tidak terlalu besar */
 }
 
-/* Gaya untuk navigasi */
 nav ul {
     list-style: none;
     text-align: center;
@@ -54,13 +41,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Gaya utama untuk konten */
 main {
     margin-top: 20px;
-    width: 80%;
 }
 
-/* Gaya untuk daftar artikel */
 .articles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,10 +82,10 @@ main {
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
+    margin-bottom: 10px; /* Adds space below the link */
+    margin-left: 5px; /* Adds space to the left of the link */
+    margin-right: 5px; /* Adds space to the right of the link */
+    padding: 5px 10px; /* Adds space inside the link for a button-like feel */
 }
 
 .about-us {
@@ -132,7 +116,6 @@ main {
     margin-top: 10px;
 }
 
-/* Gaya untuk bagian team member */
 .team-member {
     background-color: #fff;
     padding: 20px;
@@ -155,12 +138,7 @@ main {
     transform: scale(1.05); 
 }
 
-/* Media query untuk perangkat kecil */
 @media (max-width: 768px) {
-    .articles {
-        grid-template-columns: 1fr;
-    }
-
     .about-us {
         flex-direction: column;
         align-items: center;
@@ -172,7 +150,6 @@ main {
     }
 }
 
-/* Gaya untuk footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -181,7 +158,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Gaya untuk form pencarian */
 .search-form {
     display: flex;
     margin-left: auto;
@@ -189,11 +165,10 @@ footer {
 }
 
 #searchInput {
-    flex: 1;
     padding: 5px;
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 5px; /* Jarak antara input dan tombol */
 }
 
 .search-form button {
@@ -226,38 +201,3 @@ footer {
     animation: pageFadeIn 0.7s ease-in-out forwards;
 }
 
-/* Media query untuk perangkat kecil */
-@media (max-width: 768px) {
-    header {
-        padding: 10px 10px; /* Padding lebih kecil untuk layar kecil */
-    }
-
-    .search-form {
-        flex-direction: column; /* Form menjadi vertikal pada layar kecil */
-        max-width: 100%; /* Lebar penuh pada layar kecil */
-        padding: 0 15px; /* Jarak dari sisi kiri dan kanan */
-    }
-
-    #searchInput {
-        width: 100%; /* Lebar penuh pada layar kecil */
-        margin-bottom: 10px; /* Tambahkan jarak bawah */
-        margin-right: 0; /* Hilangkan jarak kanan */
-    }
-}
-
-aside {
-    width: 20%;
-    padding: 20px; /* Anda bisa menyesuaikan padding ini jika perlu */
-    border-right: 1px solid #ddd;
-    margin-right: 20px; /* Mengatur jarak kanan jika ada */
-    text-align: left; /* Mengatur teks agar rata kiri */
-}
-
-.article-list {
-    list-style-type: none;
-    padding: 0; /* Menghapus padding */
-}
-
-.article-list li {
-    margin-bottom: 10px; /* Jarak antara item */
-}
