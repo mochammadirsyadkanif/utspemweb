@@ -71,7 +71,6 @@ Dokumentasi proyek ini mencakup beberapa point penting:
 - **Struktur Folder**:
     - `index.html` - file halaman utama pada web
     - `style.css` - file css untuk mengatur tampilan
-    - **javascript** - fungsi interaktif
     - **assets** - file berisikan image yang di butuhkan pada web
 - **SRS (Software Requirements Specification)**:
     - **Tujuan**: Menciptakan halaman web artikel yang menarik untuk pembaca
