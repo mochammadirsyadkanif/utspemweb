@@ -22,23 +22,22 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Memberi padding lebih kecil agar lebih rapi di layar kecil */
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 header h1 {
-    font-size: 24px;
-    margin: 0;
+    margin-left: 10px;
+    font-size: 24px; /* Sesuaikan ukuran font agar tidak terlalu besar */
 }
 
 /* Gaya untuk navigasi */
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
+    text-align: center;
 }
 
 nav ul li {
@@ -51,20 +50,23 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Gaya utama untuk konten */
+main {
+    margin-top: 20px;
+}
+
 /* Gaya untuk daftar artikel */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
 .articles article {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Gaya responsif untuk artikel */
-@media (max-width: 768px) {
-    .articles {
-        grid-template-columns: 1fr;
-    }
 }
 
 .articles img {
@@ -237,26 +239,3 @@ footer {
         margin-right: 0; /* Hilangkan jarak kanan */
     }
 }
-
-/* Sidebar dan Konten Utama */
-.container {
-    display: flex;
-}
-
-aside {
-    width: 25%;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-right: 1px solid #ddd;
-}
-
-main {
-    width: 75%;
-    padding: 20px;
-}
-
-aside, main {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
