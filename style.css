@@ -22,11 +22,11 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 15px; /* Memberi padding lebih kecil agar lebih rapi di layar kecil */
-    text-align: center;
+    padding: 10px 15px; /* Anda bisa mengurangi padding ini jika perlu */
+    text-align: left; /* Mengatur teks agar rata kiri */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Menyusun item ke kiri */
 }
 
 header h1 {
@@ -246,4 +246,13 @@ aside {
     border-right: 1px solid #ddd;
     margin-right: 20px; /* Mengatur jarak kanan jika ada */
     text-align: left; /* Mengatur teks agar rata kiri */
+}
+
+.article-list {
+    list-style-type: none;
+    padding: 0; /* Menghapus padding */
+}
+
+.article-list li {
+    margin-bottom: 10px; /* Jarak antara item */
 }
