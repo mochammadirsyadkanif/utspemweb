@@ -17,6 +17,11 @@ body {
     display: flex;
 }
 
+.containerr {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Gaya untuk header */
 header {
     background-color: #333;
