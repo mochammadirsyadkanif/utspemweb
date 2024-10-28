@@ -22,13 +22,16 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 15px; /* Memberi padding lebih kecil agar lebih rapi di layar kecil */
     text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h1 {
     margin-bottom: 10px;
+    font-size: 24px; /* Sesuaikan ukuran font agar tidak terlalu besar */
 }
 
 /* Gaya untuk navigasi */
@@ -47,20 +50,22 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Mengatur form pencarian agar tidak offside */
+/* Gaya untuk form pencarian agar responsif */
 .search-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto; /* Tambahkan margin untuk posisi tengah */
-    max-width: 300px; /* Batas maksimal untuk desktop */
+    margin: 10px 0; /* Mengatur margin agar tetap proporsional */
+    width: 100%; /* Lebar penuh */
+    max-width: 300px; /* Batasi ukuran maksimal pada desktop */
 }
 
 #searchInput {
+    flex: 1;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    flex: 1; /* Memastikan lebar input mengikuti container */
+    margin-right: 5px; /* Jarak antara input dan tombol */
 }
 
 .search-form button {
@@ -113,20 +118,22 @@ main {
 
 /* Media query untuk perangkat kecil */
 @media (max-width: 768px) {
-    .articles {
-        grid-template-columns: 1fr;
+    header {
+        padding: 10px 10px; /* Padding lebih kecil untuk layar kecil */
     }
 
     .search-form {
-        flex-direction: column; /* Ubah arah menjadi kolom pada perangkat kecil */
-        width: 100%; /* Lebar penuh untuk tampilan kecil */
-        padding: 0 20px; /* Menambahkan padding di kiri dan kanan */
+        flex-direction: column; /* Form menjadi vertikal pada layar kecil */
+        max-width: 100%; /* Lebar penuh pada layar kecil */
+        padding: 0 15px; /* Jarak dari sisi kiri dan kanan */
     }
 
     #searchInput {
-        width: 100%;
-        margin-bottom: 10px; /* Beri jarak di bawah input pencarian */
+        width: 100%; /* Lebar penuh pada layar kecil */
+        margin-bottom: 10px; /* Tambahkan jarak bawah */
+        margin-right: 0; /* Hilangkan jarak kanan */
     }
+}
 
     nav ul {
         display: block; /* Memperbaiki navigasi untuk mobile */
