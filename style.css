@@ -14,8 +14,7 @@ body {
 
 /* Mengatur lebar container utama */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
 }
 
 /* Gaya untuk header */
@@ -53,6 +52,7 @@ nav ul li a {
 /* Gaya utama untuk konten */
 main {
     margin-top: 20px;
+    width: 80%;
 }
 
 /* Gaya untuk daftar artikel */
