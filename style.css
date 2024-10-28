@@ -24,6 +24,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
@@ -44,6 +45,35 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Mengatur form pencarian agar tidak offside */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto; /* Tambahkan margin untuk posisi tengah */
+    max-width: 300px; /* Batas maksimal untuk desktop */
+}
+
+#searchInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* Memastikan lebar input mengikuti container */
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
 }
 
 /* Gaya utama untuk konten */
@@ -72,20 +102,6 @@ main {
     margin-bottom: 10px;
 }
 
-.article2 img {
-    width:50%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.article3 img {
-    width:30%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
 .read-more {
     display: inline-block;
     margin-top: 10px;
@@ -95,66 +111,25 @@ main {
     padding: 5px 10px;
 }
 
-.about-us {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.about-us h2 {
-    margin-bottom: 20px;
-}
-
-.about-us .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 70px;
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Gaya untuk bagian team member */
-.team-member {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    transition: transform 0.3s;
-}
-
-.team-member:hover {
-    transform: scale(1.05); 
-}
-
 /* Media query untuk perangkat kecil */
 @media (max-width: 768px) {
     .articles {
         grid-template-columns: 1fr;
     }
 
-    .about-us {
-        flex-direction: column;
-        align-items: center;
+    .search-form {
+        flex-direction: column; /* Ubah arah menjadi kolom pada perangkat kecil */
+        width: 100%; /* Lebar penuh untuk tampilan kecil */
+        padding: 0 20px; /* Menambahkan padding di kiri dan kanan */
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-bottom: 10px; /* Beri jarak di bawah input pencarian */
+    }
+
+    nav ul {
+        display: block; /* Memperbaiki navigasi untuk mobile */
     }
 
     .team-member {
@@ -170,33 +145,6 @@ footer {
     text-align: center;
     padding: 30px 0;
     margin-top: 20px;
-}
-
-/* Gaya untuk form pencarian */
-.search-form {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
-
-#searchInput {
-    padding: 5px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search-form button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-form button:hover {
-    background-color: #0056b3;
 }
 
 /* Animasi fade-in untuk halaman utama */
