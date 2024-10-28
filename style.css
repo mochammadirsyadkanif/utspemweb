@@ -239,3 +239,11 @@ footer {
         margin-right: 0; /* Hilangkan jarak kanan */
     }
 }
+
+aside {
+    width: 20%;
+    padding: 20px; /* Anda bisa menyesuaikan padding ini jika perlu */
+    border-right: 1px solid #ddd;
+    margin-right: 20px; /* Mengatur jarak kanan jika ada */
+    text-align: left; /* Mengatur teks agar rata kiri */
+}
