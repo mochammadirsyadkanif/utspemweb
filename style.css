@@ -22,12 +22,16 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 15px; /* Memberi padding lebih kecil agar lebih rapi di layar kecil */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h1 {
     margin-bottom: 10px;
+    font-size: 24px; /* Sesuaikan ukuran font agar tidak terlalu besar */
 }
 
 /* Gaya untuk navigasi */
@@ -180,10 +184,11 @@ footer {
 }
 
 #searchInput {
+    flex: 1;
     padding: 5px;
-    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 5px; /* Jarak antara input dan tombol */
 }
 
 .search-form button {
@@ -214,4 +219,23 @@ footer {
 .page-fade-in {
     opacity: 0;
     animation: pageFadeIn 0.7s ease-in-out forwards;
+}
+
+/* Media query untuk perangkat kecil */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 10px; /* Padding lebih kecil untuk layar kecil */
+    }
+
+    .search-form {
+        flex-direction: column; /* Form menjadi vertikal pada layar kecil */
+        max-width: 100%; /* Lebar penuh pada layar kecil */
+        padding: 0 15px; /* Jarak dari sisi kiri dan kanan */
+    }
+
+    #searchInput {
+        width: 100%; /* Lebar penuh pada layar kecil */
+        margin-bottom: 10px; /* Tambahkan jarak bawah */
+        margin-right: 0; /* Hilangkan jarak kanan */
+    }
 }
