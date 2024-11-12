@@ -75,7 +75,7 @@ Dokumentasi proyek ini mencakup beberapa point penting:
 - **SRS (Software Requirements Specification)**:
     - **Tujuan**: Menciptakan halaman web artikel yang menarik untuk pembaca
     - **Fungsi Utama**: Menampilkan sebuah artikel bermacam macam topik yang menarik
-    - **Speksifikasi Pengguna**: Simpel, mudah digunakan, responsif, interaktif.
+    - **Speksifikasi Pengguna**: Simpel, mudah digunakan, interaktif.
     - **Batasan**: Fitur hanya mendukung tampilan dekstop/pc
 
 ### 5. Fungsionalitas JavaScript
